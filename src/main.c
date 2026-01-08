@@ -329,10 +329,7 @@ void handlePacket (int client_fd, int length, int packet_id, int state) {
         //-0.27 due to players jumping 1.25 blocks
         if(player -> y > y  ||player -> falling == true || (player -> y != player-> grounded_y && player -> y > y- 0.27)) {
             player -> falling = true;
-        }else {
-            player -> falling = false;
-        };
-
+        }
         // Update position in player data
         player->x = cx;
         player->y = cy;
