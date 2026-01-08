@@ -212,6 +212,7 @@ typedef struct {
   int8_t yaw;
   int8_t pitch;
   uint8_t grounded_y;
+  bool falling;
   uint8_t health;
   uint8_t hunger;
   uint16_t saturation;
@@ -235,7 +236,6 @@ typedef struct {
   // 0x40 - movement update cooldown
   // 0x80 - craft_items lock (for storing pointers)
   uint8_t flags;
-  bool falling;
 } PlayerData;
 
 typedef struct {
