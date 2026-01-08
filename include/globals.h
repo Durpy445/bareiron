@@ -235,6 +235,7 @@ typedef struct {
   // 0x40 - movement update cooldown
   // 0x80 - craft_items lock (for storing pointers)
   uint8_t flags;
+  bool falling;
 } PlayerData;
 
 typedef struct {
