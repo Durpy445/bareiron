@@ -3,6 +3,7 @@
 
 #include <stdint.h>
 #include <unistd.h>
+#include <stdbool.h>
 
 #ifdef ESP_PLATFORM
   #define WIFI_SSID "your-ssid"
